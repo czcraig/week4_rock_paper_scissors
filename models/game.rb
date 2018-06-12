@@ -25,13 +25,13 @@ class Game
     # if @move1 == "scissors"
     #     @move2 == "paper"
     #   return "Scissors wins"
-      if @move1 == @move2
+      if move1 == move2
         return "It's a draw!"
       end
-      if @move1 == @rules[@move2]
-        return "#{@move1} wins"
+      if move1 == @rules[move2]
+        return "#{move1} wins"
       else
-        return "#{@move2} wins"
+        return "#{move2} wins"
       end
     end
   #
