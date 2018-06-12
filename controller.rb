@@ -8,3 +8,7 @@ get "/game/:move1/:move2" do
   @game_result = game.play_game
   erb(:game_result)
 end
+
+get "/" do
+  erb(:home)
+end
